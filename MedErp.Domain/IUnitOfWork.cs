@@ -7,6 +7,10 @@ namespace MedErp.Domain
     public interface IUnitOfWork
     {
         IInventoryRepository InventoryRepository { get; }
+        IItemRepository ItemRepository { get; }
+        IItemTypeRepository ItemTypeRepository { get; }
+        IVendorRepository VendorRepository { get; }
+        IAisleRepository AisleRepository { get; }
 
 
 

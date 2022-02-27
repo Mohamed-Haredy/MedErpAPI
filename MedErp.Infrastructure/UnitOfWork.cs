@@ -18,9 +18,26 @@ namespace MedErp.Infrastructure
         }
 
         private IInventoryRepository inventoryRepository;
+        private IItemRepository itemRepository;
+        private IItemTypeRepository itemTypeRepository;
+        private IVendorRepository vendorRepository;
+        private IAisleRepository aisleRepository;
 
 
         public IInventoryRepository InventoryRepository => inventoryRepository ??= new InventoryRepository(dbContext);
+        public IItemRepository ItemRepository => itemRepository ??= new ItemRepository(dbContext);
+        public IItemTypeRepository ItemTypeRepository => itemTypeRepository ??= new ItemTypeRepository(dbContext);
+        public IVendorRepository VendorRepository => vendorRepository ??= new VendorRepository(dbContext);
+        public IAisleRepository AisleRepository => aisleRepository ??= new AisleRepository(dbContext);
+
+
+
+
+
+
+
+
+
 
 
         public IRepository<T> AsyncRepository<T>() where T : Entity
