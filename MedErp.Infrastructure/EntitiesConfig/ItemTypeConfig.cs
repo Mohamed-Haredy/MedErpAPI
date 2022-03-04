@@ -17,8 +17,8 @@ namespace MedErp.Infrastructure.EntitiesConfig
             return new List<ItemType>()
             {
                 new ItemType() { Id = 1, TypeName = "Clothing" },
-                new ItemType() { Id = 1, TypeName = "Equipment" },
-                new ItemType() { Id = 1, TypeName = "Medication" }
+                new ItemType() { Id = 2, TypeName = "Equipment" },
+                new ItemType() { Id = 3, TypeName = "Medication" }
             };
         }
     }
