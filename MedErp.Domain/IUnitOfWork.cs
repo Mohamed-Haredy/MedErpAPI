@@ -18,6 +18,7 @@ namespace MedErp.Domain
         IDoctorRepository DoctorRepository { get; }
         IAdmittedPatientRepository AdmittedPatientRepository { get; }
         IOutPatientRepository OutPatientRepository { get; }
+        IAppointmentRepository AppointmentRepository { get; }
 
 
 
