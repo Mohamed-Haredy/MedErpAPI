@@ -30,6 +30,7 @@ namespace MedErp.Infrastructure
         private IAdmittedPatientRepository  admittedPatientRepository;
         private IOutPatientRepository outPatientRepository;
         private IAppointmentRepository appointmentRepository;
+        private IAppointmentTypeRepository appointmentTypeRepository;
 
 
 
@@ -46,6 +47,7 @@ namespace MedErp.Infrastructure
         public IAdmittedPatientRepository AdmittedPatientRepository => admittedPatientRepository ??= new AdmittedPatientRepository(dbContext);
         public IOutPatientRepository OutPatientRepository => outPatientRepository ??= new OutPatientRepository(dbContext);
         public IAppointmentRepository AppointmentRepository => appointmentRepository ??= new AppointmentRepository(dbContext);
+        public IAppointmentTypeRepository AppointmentTypeRepository => appointmentTypeRepository ??= new AppointmentTypeRepository(dbContext);
 
 
 
