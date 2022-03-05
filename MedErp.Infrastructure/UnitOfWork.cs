@@ -22,6 +22,14 @@ namespace MedErp.Infrastructure
         private IItemTypeRepository itemTypeRepository;
         private IVendorRepository vendorRepository;
         private IAisleRepository aisleRepository;
+        private IPatientRepository patientRepository;
+        private IBloodTypeRepository bloodTypeRepository;
+        private IReligionRepository religionRepository;
+        private ICountryRepository countryRepository;
+        private IDoctorRepository doctorRepository;
+        private IAdmittedPatientRepository  admittedPatientRepository;
+        private IOutPatientRepository outPatientRepository;
+
 
 
         public IInventoryRepository InventoryRepository => inventoryRepository ??= new InventoryRepository(dbContext);
@@ -29,7 +37,13 @@ namespace MedErp.Infrastructure
         public IItemTypeRepository ItemTypeRepository => itemTypeRepository ??= new ItemTypeRepository(dbContext);
         public IVendorRepository VendorRepository => vendorRepository ??= new VendorRepository(dbContext);
         public IAisleRepository AisleRepository => aisleRepository ??= new AisleRepository(dbContext);
-
+        public IPatientRepository PatientRepository => patientRepository ??= new PatientRepository(dbContext);
+        public IBloodTypeRepository BloodTypeRepository => bloodTypeRepository ??= new BloodTypeRepository(dbContext);
+        public IReligionRepository ReligionRepository => religionRepository ??= new ReligionRepository(dbContext);
+        public ICountryRepository CountryRepository => countryRepository ??= new CountryRepository(dbContext);
+        public IDoctorRepository DoctorRepository => doctorRepository ??= new DoctorRepository(dbContext);
+        public IAdmittedPatientRepository AdmittedPatientRepository => admittedPatientRepository ??= new AdmittedPatientRepository(dbContext);
+        public IOutPatientRepository OutPatientRepository => outPatientRepository ??= new OutPatientRepository(dbContext);
 
 
 

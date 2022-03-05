@@ -11,9 +11,13 @@ namespace MedErp.Domain
         IItemTypeRepository ItemTypeRepository { get; }
         IVendorRepository VendorRepository { get; }
         IAisleRepository AisleRepository { get; }
-
-
-
+        IPatientRepository PatientRepository { get; }
+        IBloodTypeRepository BloodTypeRepository { get; }
+        IReligionRepository ReligionRepository { get; }
+        ICountryRepository CountryRepository { get; }
+        IDoctorRepository DoctorRepository { get; }
+        IAdmittedPatientRepository AdmittedPatientRepository { get; }
+        IOutPatientRepository OutPatientRepository { get; }
 
 
 

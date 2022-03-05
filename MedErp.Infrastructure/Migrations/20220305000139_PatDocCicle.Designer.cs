@@ -4,6 +4,7 @@ using MedErp.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MedErp.Infrastructure.Migrations
 {
     [DbContext(typeof(MedErpDBContext))]
-    partial class MedErpDBContextModelSnapshot : ModelSnapshot
+    [Migration("20220305000139_PatDocCicle")]
+    partial class PatDocCicle
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
